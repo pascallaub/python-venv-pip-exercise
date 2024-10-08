@@ -9,6 +9,8 @@ data = {
 
 df = pd.DataFrame(data)
 
+df.to_csv('zahlen_quadrat_kubik.csv', index=False)
+
 df.plot(x='Zahl', y=['Quadratzahlen', 'Kubikzahlen'], kind='line')
 
 plt.title('Quadratzahlen und Kubikzahlen von 0 bis 9')
